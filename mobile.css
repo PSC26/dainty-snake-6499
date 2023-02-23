@@ -1,9 +1,9 @@
-
 .nav1{
     display: flex;
     margin: auto;
     justify-content: space-a;
     background-color: rgb(212, 212, 212);
+    height: 25px;
    
 
 }
@@ -52,11 +52,11 @@
     margin: auto;            
 }
 .nav2{
-    margin: auto;
     justify-content: space-around;
+    margin: auto;
     align-items: center;
     background-color: #dbdbdb;
-    height: 30px;
+    height: 25px;
     width: 90%;
     padding: 5px;
 }
@@ -143,187 +143,115 @@
   .dropdown:hover .dropdown-content {
     display: flex;
   }
-  .mid1{
-    display: flex;
-    justify-content: space-around;
-  
-    gap: 5px;
-  }
-  .mid1>div{
-    color: aliceblue;
-    background-color: rgb(42, 34, 29);
-
-  }
-  .mid1>div img{
-    width: 100%;
-  }
-  .mid1>div p{
-    padding: 5px;
-  }
-/*********************************************************************/
-  .mid2{
-    display: flex;
-    margin: auto;
-    gap:15px ;
-  }
-  .mid2>div:nth-child(1){
-    width: 10%;
-
-  }
-  .mid2>div:nth-child(2){
-    width: 75%;
-    border: 1px solid red ;
-
-  }
-  .mid2>div:nth-child(1)>div{
-    background-color: #dbdbdb;
-   border-radius: 5px;
-   margin-top: 5px;
 
 
-  }
-  .mid2>div:nth-child(1)>div img{
-    width: 100%;
-    border-radius: 5px;
-   
-
-  }
-  .mid2>div:nth-child(1)>div p{
-    padding: 5px;
-  }
-  
-  .mid2>div:nth-child(2)>div{
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    gap: 10px;
-  
-  }
-  .mid2>div:nth-child(2)>div>div{ 
-       font-weight: 600;
-    padding: 5px 5px 5px 5px;
-    border-radius: 10px;
-    background-color: #dbdbdb;
-   
-  }
-  .add{
-    border: 1px solid red;
-  }
-  /**************************************************************************************/
-  .container {
-    position: relative;
-    width: 70%;
-  }
-  
-  .image {
+  /*******************************************/
+  #filter{
     display: block;
     margin: auto;
-    width: 100%;
-    border-radius: 10px;
-    height: auto;
-  }
-  
-  .overlay {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    background-color: #f50202;
-    overflow: hidden;
-    width: 100%;
-    height:0;
-    transition: .5s ease;
-  }
-  
-  .container:hover .overlay {
-    bottom: 0;
-    height: 100%;
-    border-radius: 10px;
-  }
-  
-  .text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-   
-  }
-  .brand>div img{
-    width: 100%;
-  }
-  .bot {
-    background-color: black;
-    color: #dbdbdb;
-    padding: 10px;
-  }
-  .bot h2{
-    text-decoration:dotted;
-  }
-  .bottom{
-   display: flex;
-   margin: auto;
-   gap: 10px;
-   background-color: rgb(45, 45, 45);
-   color: #dbdbdb;
-  
-  }
-  .bottom img{
-    width: 45%;
-    height: 150px;
-    margin-top: 25px;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 5px;
   }
 
-  .bottom>div:nth-child(2){
-    width: 5%;
-    display: inline;
-    margin-top: 25px;
-    
+  #mobile{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: auto;
+    gap: 10px;
   }
-  .bottom>div:nth-child(3){
-    width: 7%;
-    display: inline;
-    margin-top: 25px;
-  }
-  .bottom>div:nth-child(2) a{
-    color: #dbdbdb;
-    text-decoration: none;
-  }
-  .bottom>div:nth-child(3) a{
-    color: #dbdbdb;
-    text-decoration: none;
-  }
-
-  #social{
+  #mobile>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 10px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
   }
-  .fa:hover {
-    opacity: 0.7;
+  #mobile>div button{
+    background-color:rgb(134, 236, 249);
+    border: none;
+    display: block;
+    margin: auto;
+    font-weight: bold;
+
+    font-size: large;
+  }
+  #mobile>div img{
+      display: block;
+      margin:auto;
+      width: 100px;
+  }
+  #mobile>div p{
+    font-size: large;
+    font-weight: bold;
+    color:crimson
 }
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
+.bot {
+  background-color: black;
+  color: #dbdbdb;
+  padding: 10px;
+}
+.bot h2{
+  text-decoration:dotted;
+}
+.bottom{
+ display: flex;
+ margin: auto;
+ gap: 10px;
+ background-color: rgb(45, 45, 45);
+ color: #dbdbdb;
+
+}
+.bottom img{
+  width: 45%;
+  height: 150px;
+  margin-top: 25px;
+}
+
+.bottom>div:nth-child(2){
+  width: 5%;
+  display: inline;
+  margin-top: 25px;
   
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
-  
-  .fa-google {
-    background: #dd4b39;
-    color: white;
-  }
-  
-  .fa-linkedin {
-    background: #007bb5;
-    color: white;
-  }
+}
+.bottom>div:nth-child(3){
+  width: 7%;
+  display: inline;
+  margin-top: 25px;
+}
+.bottom>div:nth-child(2) a{
+  color: #dbdbdb;
+  text-decoration: none;
+}
+.bottom>div:nth-child(3) a{
+  color: #dbdbdb;
+  text-decoration: none;
+}
+
+#social{
+  padding: 10px;
+font-size: 30px;
+width: 50px;
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
