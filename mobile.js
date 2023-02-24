@@ -1,17 +1,19 @@
-async function fetchdata(){
+let data="https://63c63fa74ebaa802854206df.mockapi.io/mobile"
+async function fetchdata(data){
+
     try{
-      let api=await fetch("https://63c63fa74ebaa802854206df.mockapi.io/mobile")
+      let api=await fetch(`${data}`)
           api=await api.json();
           console.log(api)
-          filterdata(api)
+          displayproduct(api)
           
     }catch(error){
       console.log(error)
     }
     
   }
-  fetchdata();
-
+  fetchdata(data);
+  //?sortBy=price&order=asc
   let filterby=document.getElementById("filter");
       filterby.addEventListener("change",()=>{
         fetchdata()
@@ -28,6 +30,24 @@ async function fetchdata(){
       }
 
   }
+
+  let sortby=document.getElementById("sort");
+  sortby.addEventListener("change",()=>{
+    let sortValue=sortby.value
+    if(sortValue===""){
+      fetchdata(data)
+    }else{
+      if(sortValue==="asen"){
+        data=`${data}?sortBy=price&order=asc`
+        fetchdata(data);
+      }else if(sortValue==="dsen"){
+        data=`${data}?sortBy=price&order=desc`
+        fetchdata(data);
+      }
+    }
+  })
+  
+  
 
   let cont=document.getElementById("mobile")
   let cartArr=JSON.parse(localStorage.getItem("cart"))||[];

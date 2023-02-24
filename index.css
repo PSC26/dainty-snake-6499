@@ -34,10 +34,10 @@
     
 }
 .btn button:nth-child(2){
-    background-color: red;
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
     font-weight: 1000;
-    color: white;
+    color: rgb(254, 0, 0);
 }
 .btn button:nth-child(3){
     background-color: rgb(0, 85, 255);
@@ -81,7 +81,6 @@
 .nav2>div:nth-child(2) button{
     width: 10%;
     font-size: 20px;
-
 }
 .nav2>div:nth-child(2) button:hover{
     background-color: #a5a5a5;
@@ -96,8 +95,7 @@
 .dropdown {
     float: left;
     overflow: hidden;
-  }
-  
+}
   /* Dropdown button */
   .dropdown .dropbtn {
     font-size: 20px;
@@ -143,8 +141,14 @@
   .dropdown:hover .dropdown-content {
     display: flex;
   }
+  .title{
+    margin: auto;
+    width: 90%;
+  }
   .mid1{
     display: flex;
+    margin: auto;
+    width: 90%;
     justify-content: space-around;
   
     gap: 5px;
@@ -152,7 +156,6 @@
   .mid1>div{
     color: aliceblue;
     background-color: rgb(42, 34, 29);
-
   }
   .mid1>div img{
     width: 100%;
@@ -164,6 +167,7 @@
   .mid2{
     display: flex;
     margin: auto;
+    width: 90%;
     gap:15px ;
   }
   .mid2>div:nth-child(1){
@@ -172,7 +176,6 @@
   }
   .mid2>div:nth-child(2){
     width: 75%;
-    border: 1px solid red ;
 
   }
   .mid2>div:nth-child(1)>div{
@@ -199,14 +202,17 @@
   
   }
   .mid2>div:nth-child(2)>div>div{ 
-       font-weight: 600;
+    font-weight: 600;
     padding: 5px 5px 5px 5px;
     border-radius: 10px;
     background-color: #dbdbdb;
    
   }
   .add{
-    border: 1px solid red;
+    width: 20%;
+  }
+  .add img{
+    width: 100%;
   }
   /**************************************************************************************/
   .container {
@@ -255,47 +261,58 @@
   .brand>div img{
     width: 100%;
   }
-  .bot {
-    background-color: black;
-    color: #dbdbdb;
-    padding: 10px;
-  }
-  .bot h2{
-    text-decoration:dotted;
-  }
-  .bottom{
-   display: flex;
-   margin: auto;
-   gap: 10px;
-   background-color: rgb(45, 45, 45);
-   color: #dbdbdb;
   
-  }
-  .bottom img{
-    width: 45%;
-    height: 150px;
-    margin-top: 25px;
-  }
+.black{
+  margin-top: 20px;
+  width: 100%;
+  background-color: black;
+}
+.bot {
+  background-color: black;
+  color: #dbdbdb;
+  padding: 10px;
+  margin-top: 10px;
+  width: 90%;
+  margin: auto;
+}
+.bot h2{
+  text-decoration:dotted;
+}
+.bottom{
+ display: flex;
+ margin: auto;
+ gap: 10px;
+ background-color: rgb(45, 45, 45);
+ color: #dbdbdb;
+ width: 90%;
+  margin: auto;
 
-  .bottom>div:nth-child(2){
-    width: 5%;
-    display: inline;
-    margin-top: 25px;
-    
-  }
-  .bottom>div:nth-child(3){
-    width: 7%;
-    display: inline;
-    margin-top: 25px;
-  }
-  .bottom>div:nth-child(2) a{
-    color: #dbdbdb;
-    text-decoration: none;
-  }
-  .bottom>div:nth-child(3) a{
-    color: #dbdbdb;
-    text-decoration: none;
-  }
+}
+.bottom img{
+  width: 45%;
+  height: 150px;
+  margin-top: 25px;
+}
+
+.bottom>div:nth-child(2){
+  width: 5%;
+  display: inline;
+  margin-top: 25px;
+  
+}
+.bottom>div:nth-child(3){
+  width: 5%;
+  display: inline;
+  margin-top: 25px;
+}
+.bottom>div:nth-child(2) a{
+  color: #dbdbdb;
+  text-decoration: none;
+}
+.bottom>div:nth-child(3) a{
+  color: #dbdbdb;
+  text-decoration: none;
+}
 
   #social{
     padding: 10px;
