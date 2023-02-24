@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        /* Bordered form */
+        body{
+          background-image: url(/img/M_G_3-09.jpg);
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+form {
+    color: rgb(0, 0, 0);
+    width: 400px;
+    border-radius: 20px;
+    margin: auto;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password],[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(254, 254, 254);
+    box-sizing: border-box;
+    background-color: transparent;
+  }
+  
+  #re{
+    display: flex;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #0471ed;
+    color: rgb(253, 253, 253);
+    padding: 10px 5px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  
+  @media screen and (max-width: 480px) {
+    body{
+      background-image: url(/img/shop1.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    input[type=text], input[type=password],[type=email]{
+      width: 90%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid rgb(0, 0, 0);
+      box-sizing: border-box;
+      background-color: transparent;
+    }
+    button {
+    background-color: #0471ed;
+    color: rgb(248, 248, 248);
+    padding: 10px 5px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+    </style>
+</head>
+<body>
+  <div id="info">
+    <form id="signup">
+      <h1>SIGN UP</h1>
+      <input class="input" id="email" type="email" placeholder="Email Address" required>
+      <input class="input" id="pass" type="password" placeholder="Password" required>
+      <input class="input" id="cpass" type="password" placeholder="Confirm Password" required>
+    <div id="re">
+      <input type="checkbox" required> <p>I agree to the receive news letters from Mirraw</p>
+    </div>
+      <button>SIGN UP</button>
+    </form>
+</body>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/signup.js"></script>

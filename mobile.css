@@ -1,3 +1,6 @@
+body{
+  background-color: #f1f1f1;
+}
 .nav1{
     display: flex;
     margin: auto;
@@ -34,10 +37,10 @@
     
 }
 .btn button:nth-child(2){
-    background-color: red;
+    background-color: rgb(249, 249, 249);
     border-radius: 5px;
     font-weight: 1000;
-    color: white;
+    color: rgb(255, 0, 0);
 }
 .btn button:nth-child(3){
     background-color: rgb(0, 85, 255);
@@ -158,11 +161,18 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     margin: auto;
-    gap: 10px;
+    gap: 20px;
+    width: 90%;
+    
   }
   #mobile>div{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 10px;
+    background-color: #ffffff;
+    border-radius: 25px;
+   
+
+    
   }
   #mobile>div button{
     background-color:rgb(134, 236, 249);
@@ -183,10 +193,19 @@
     font-weight: bold;
     color:crimson
 }
+
+.black{
+  margin-top: 20px;
+  width: 100%;
+  background-color: black;
+}
 .bot {
   background-color: black;
   color: #dbdbdb;
   padding: 10px;
+  margin-top: 10px;
+  width: 90%;
+  margin: auto;
 }
 .bot h2{
   text-decoration:dotted;
@@ -197,6 +216,8 @@
  gap: 10px;
  background-color: rgb(45, 45, 45);
  color: #dbdbdb;
+ width: 90%;
+  margin: auto;
 
 }
 .bottom img{
@@ -212,7 +233,7 @@
   
 }
 .bottom>div:nth-child(3){
-  width: 7%;
+  width: 5%;
   display: inline;
   margin-top: 25px;
 }
