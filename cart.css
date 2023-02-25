@@ -1,10 +1,8 @@
-
 .nav1{
     display: flex;
     margin: auto;
-    justify-content: space-a;
+    justify-content: space-around;
     background-color: rgb(212, 212, 212);
-    height: 25px;
    
 
 }
@@ -15,7 +13,7 @@
     gap: 15px;
     align-items: center;
     font-weight: 900;
-    width: 85%;
+    width: 80%;
 }
 .nav1>div:nth-child(1) a{
     text-decoration: none;
@@ -23,10 +21,13 @@
 }
 .btn{
     display: flex;
-    width: 15%;
+    width: 20%;
     justify-content: space-around;
 }
-.btn button:nth-child(1){
+.btn img{
+  width: 5%;
+}
+.btn button:nth-child(2){
     background-color: rgb(0, 170, 255);
     border: none;
     border-radius: 5px;
@@ -34,30 +35,30 @@
     color: white;
     
 }
-.btn button:nth-child(2){
-    background-color: rgb(249, 249, 249);
+.btn button:nth-child(3){
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
     font-weight: 1000;
-    color: rgb(255, 0, 0);
+    color: rgb(254, 0, 0);
 }
-.btn img{
-    width: 80%;
+.btn button:nth-child(4){
+    background-color: rgb(0, 85, 255);
+    border: none;
+    border-radius: 5px;
+    font-weight: 1000;
+    color: white;
 }
-.btn a{
-  width: 10%;
-}
-
 .logo img{
     width: 400px;
     display: block;
     margin: auto;            
 }
 .nav2{
-    justify-content: space-around;
     margin: auto;
+    justify-content: space-around;
     align-items: center;
     background-color: #dbdbdb;
-    height: 25px;
+    height: 30px;
     width: 90%;
     padding: 5px;
 }
@@ -82,7 +83,6 @@
 .nav2>div:nth-child(2) button{
     width: 10%;
     font-size: 20px;
-
 }
 .nav2>div:nth-child(2) button:hover{
     background-color: #a5a5a5;
@@ -91,14 +91,65 @@
     background-color: #a5a5a5;
     color: white;
 }
+#ct{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 20px;
+    text-align: right;
+    background-color:transparent;
+    border-radius: 10px;
+    justify-content: space-around;
+    display: flex;
+}
+#mobile{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: auto;
+    margin-top: 20px;
+    gap: 20px;
+    width: 90%;
+    
 
+    
+  }
+  #mobile>div{
+    box-shadow: rgba(0, 0, 0, 0.494) 0px 3px 8px;
+    padding: 10px;
+   
+    border-radius: 25px;
+   
+
+    
+  }
+  #mobile>div button{
+    background-color:rgb(61, 149, 255);
+    border: none;
+    display: inline;
+    margin: auto;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 3px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    padding: 5px ;
+    border: none;
+    margin: 10px;
+  }
+  #mobile>div img{
+      display: block;
+      margin:auto;
+      width: 100px;
+  }
+  #mobile>div p{
+    font-size: large;
+    font-weight: bold;
+    color:crimson
+}
 
 /******************************************************************************/
 .dropdown {
     float: left;
     overflow: hidden;
-  }
-  
+}
   /* Dropdown button */
   .dropdown .dropbtn {
     font-size: 20px;
@@ -145,140 +196,3 @@
     display: flex;
   }
 
-
-  /*******************************************/
-  
-
-  #mobile{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    margin: auto;
-    gap: 20px;
-    width: 90%;
-    
-  }
-  #mobile>div{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 10px;
-    background-color: #ffffff;
-    border-radius: 25px;
-   
-
-    
-  }
-  #mobile>div button{
-    background-color:rgb(134, 236, 249);
-    border: none;
-    display: block;
-    margin: auto;
-    font-weight: bold;
-
-    font-size: large;
-  }
-  #mobile>div img{
-      display: block;
-      margin:auto;
-      width: 100px;
-  }
-  #mobile>div p{
-    font-size: large;
-    font-weight: bold;
-    color:crimson
-}
-
-.black{
-  margin-top: 20px;
-  width: 100%;
-  background-color: black;
-}
-.bot {
-  background-color: black;
-  color: #dbdbdb;
-  padding: 10px;
-  margin-top: 10px;
-  width: 90%;
-  margin: auto;
-}
-.bot h2{
-  text-decoration:dotted;
-}
-.bottom{
- display: flex;
- margin: auto;
- gap: 10px;
- background-color: rgb(45, 45, 45);
- color: #dbdbdb;
- width: 90%;
-  margin: auto;
-
-}
-.bottom img{
-  width: 45%;
-  height: 150px;
-  margin-top: 25px;
-}
-
-.bottom>div:nth-child(2){
-  width: 5%;
-  display: inline;
-  margin-top: 25px;
-  
-}
-.bottom>div:nth-child(3){
-  width: 5%;
-  display: inline;
-  margin-top: 25px;
-}
-.bottom>div:nth-child(2) a{
-  color: #dbdbdb;
-  text-decoration: none;
-}
-.bottom>div:nth-child(3) a{
-  color: #dbdbdb;
-  text-decoration: none;
-}
-
-#social{
-  padding: 10px;
-font-size: 30px;
-width: 50px;
-text-align: center;
-text-decoration: none;
-margin: 5px 2px;
-}
-.fa:hover {
-  opacity: 0.7;
-}
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-.func select{
-  font-size: 25px;
-  margin-left: 20px;
-
-  
-}
-.func {
-  display: block;
-  margin: auto;
-  width: 25%;
- padding: 10px;
-  justify-content: space-between;
-
-}

@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Page</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/mobile.css">
+    <link rel="stylesheet" href="/cart.css">
+
 </head>
 <body>
     <div class="nav1">
@@ -14,7 +15,7 @@
             <a href="">NDTV</a>
             <a href="">BUSINESS</a>
             <a href="">HINDI</a>
-            <a href="">MOVIES</a>
+            <a href="">MOVIES</a>s
             <a href="">CRICKET</a>       
             <a href="">WEBSTORIES</a>
             <a href="">EDUCATION</a>
@@ -24,9 +25,10 @@
             <a href="">ART</a>
         </div>
         <div class="btn">
-            <button>twitter <i class="fa fa-twitter" style="font-size:18px;color:rgb(255, 255, 255)"></i></button>
+            <img src="https://www.svgrepo.com/show/477710/login-3.svg" alt="">
+            <button>twitter <i class="fa fa-twitter" style="font-size:18px;color:rgb(252, 252, 252)"></i></button>
             <button>You-Tube <i class="fa fa-youtube-play" style="font-size:18px;color:red"></i></button>
-            <a href="/cart.html"><img src="https://www.svgrepo.com/show/506106/cart-4.svg" alt=""></a>
+            <button>Like <a class="fa fa-thumbs-up"></a></button>
         </div>
     </div>
     <div class="logo">
@@ -34,7 +36,7 @@
     </div>
     <div class="nav2">
             <div>
-                <a href="/index.html">Home</a>
+                <a href="/home.html">Home</a>
                 <a href="">Guide</a>
                 <a href="">MWC</a>
                 <a href="">News</a>
@@ -68,7 +70,7 @@
                     </button>
                     <div class="dropdown-content">
                         <div>
-                            <a href="#">Mobile</a>
+                            <a href="/mobile.html">Mobile</a>
                             <a href="#">Tablet</a>
                             <a href="#">Events</a>
                             <a href="#">How TOS</a>
@@ -82,8 +84,8 @@
                             <a href="#">Native langauge</a>
                         </div>
                     </div>
-                  </div>
-                  <div class="dropdown">
+                </div>
+                <div class="dropdown">
                     <button class="dropbtn">Compare
                       <i class="fa fa-caret-down"></i>
                     </button>
@@ -103,7 +105,7 @@
                             <a href="#">Native langauge</a>
                         </div>
                     </div>
-                  </div>
+                </div>
                 <a href="">Recharge </a>
                 <div class="dropdown">
                     <button class="dropbtn">More
@@ -125,71 +127,22 @@
                             <a href="#">Native langauge</a>
                         </div>
                     </div>
-                  </div>
-            <div>
-                <input type="text" placeholder="Search.." name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </div>
+                </div>
+                <div>
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
         </div>
     </div>
-      <div class="func">
-        <select id="filter">
-            <option value="">Company</option>
-            <option value="Xiaomi">Xiaomi</option>
-            <option value="Samsung">Samsung</option>
-            <option value="Motorola">Motorola</option>
-            <option value="Apple">Apple</option>
-            <option value="OnePlus">OnePlus</option>
-          </select>
-          <select id="sort">
-            <option value="">All</option>
-            <option value="asen">ascending</option>
-            <option value="dsen">descending</option>
-          </select>
-      </div>
-      <div id="mobile">
-        <!-- Here Append All the Vouchers  -->
-      </div>
-      <div class="black">
-        <div class="bot">
-            <h2>About Gadgets 360</h2>
-            <p>Gadgets 360, an NDTV venture, is India's leading technology news, reviews and information website. Publishing dozens of stories per day, Gadgets 360 brings you all the latest from the world of smartphones, laptops, TVs, wearables, accessories, audio products and many more tech product categories, along with Web services, apps, streaming, gaming, science, and finance. Get all the information you need to make the best buying decisions for you and your family. We bring you not just the latest news, but advance information about what's coming, what to expect, and how to get the most out of your devices and subscriptions.
-                With India's leading tech product reviews team, Gadgets 360 publishes professional, rigorous and unbiased evaluations of products without any influence from manufacturers or promoters. Our buying guides and market analysis help you get the most of your hard-earned money. Compare specifications and ratings for various products, and check our regular lists of the best phones in each price band. Our in-house experts bring years of experience in various fields including photography, hi-fi audio, hardware, fitness, gaming, and automotive, to deeply explore the intersection of products, services and society.
-                As our lives continue to be connected and improved by technology, Gadgets 360 is at the forefront of IoT, 5G, smart services, digital finance, e-commerce, and online education. From tech policy and analysis of upcoming trends, we've got all the information you need to navigate the digital landscape that lies ahead of us all.
-                Gadgets 360 is operated by Red Pixels Ventures Ltd, founded in 2015 to continue the legacy of NDTV's pathbreaking personal technology coverage. With millions of unique visitors each month and hundreds of thousands of fans and subscribers across social services, we are India's top online destination for technology news and reviews.</p>
+<div id="ct">
+    <h1>Cart Section</h1>
+    <h1 id="total">Total Price:- ₹<span id="cart-total">0</span></h1>
+</div>
+    <div id="mobile">
+    
         </div>
-        <div class="bottom">
-            <img src="/img/360-removebg-preview.png" alt="">
-            <div>
-                <a href="">About Us</a>
-                <a href="">Sitemaps</a>
-                <a href="">Feedback</a>
-                <a href="">Archies</a>
-                <a href="">Contact</a>
-                <a href="">RSS</a>
-            </div>
-            <div>
-                <a href="">Advertise</a>
-                <a href="">Privacy Policy</a>
-                <a href="">Feedback</a>
-                <a href="">Archies</a>
-                <a href="">Contact</a>
-            </div>
-            <div>
-                <div>
-                    <h3>Gadgets 360 is available in</h3>
-                    <h3>English | Hindi</h3></div>
-                <div>
-                    <h3>Follw us</h3>
-                    <a id="social" href="#" class="fa fa-facebook"></a>
-                    <a id="social"  href="#" class="fa fa-twitter"></a>
-                    <a id="social"  href="#" class="fa fa-google"></a>
-                    <a id="social"  href="#" class="fa fa-linkedin"></a>
-                </div>
-            </div>   
-        </div>
-      </div>
+    
 </body>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="/mobile.js"></script>
+<script src ="/cart.js"></script>
 </html>
