@@ -15,7 +15,7 @@ let email=document.getElementById("email");
          if(email.value===element.Email && password.value===element.Password){
          
           setTimeout(()=>{
-            window.location.href="./index.html"
+            window.location.href="./home.html"
           },2000)
           const Toast = Swal.mixin({
           toast: true,

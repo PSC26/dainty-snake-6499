@@ -1,18 +1,17 @@
-let data="https://63c63fa74ebaa802854206df.mockapi.io/mobile"
+
 async function fetchdata(data){
 
     try{
-      let api=await fetch(`${data}`)
+      let api=await fetch("https://63c63fa74ebaa802854206df.mockapi.io/mobile");
           api=await api.json();
-          console.log(api)
-          displayproduct(api)
-          
+          console.log(api);
+          filterdata(api);
     }catch(error){
       console.log(error)
     }
-    
+
   }
-  fetchdata(data);
+  fetchdata();
   //?sortBy=price&order=asc
   let filterby=document.getElementById("filter");
       filterby.addEventListener("change",()=>{
@@ -32,6 +31,8 @@ async function fetchdata(data){
   }
 
   let sortby=document.getElementById("sort");
+
+  let data="https://63c63fa74ebaa802854206df.mockapi.io/mobile"
   sortby.addEventListener("change",()=>{
     let sortValue=sortby.value
     if(sortValue===""){
