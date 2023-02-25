@@ -21,7 +21,7 @@
 }
 .btn{
     display: flex;
-    width: 20%;
+    width: 30%;
     justify-content: space-around;
 }
 .btn img{
